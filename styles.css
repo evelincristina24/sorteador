@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Emilys Candy", serif;
+}
+
+body {
+    background: #FEFEFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    box-shadow: inset -20px 20px 220px 20px #FAADD4, inset 20px -20px 220px 20px #FAADD4;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 38px;
+    color: #D372B2;
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: 26px;
+}
+
+input {
+    background: #FEFEFE;
+    border: 3px solid #B4E2E0;
+    border-radius: 4px;
+    height: 50px;
+    width: 290px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 47px;
+    color: #8965BC;
+    opacity: 0.7;
+}
+
+.input-min {
+    margin-right: 10px;
+}
+
+button {
+    background: #D372B2;
+    box-shadow: 0px 18px 40px #C767B1;
+    border-radius: 4px;
+    width: 250px;
+    height: 50px;
+    color: #fefefe;
+    font-size: 30px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+img {
+    margin-top: -140px;
+    width: 570px;
+}
+
+.resultado-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    background: #ffffff;
+    border-radius: 280px;
+    border: dashed #8965BC 2px;
+    padding: 179px 10px;
+    text-align: center;
+    box-shadow: inset 0px 0px 95px #C767B1;
+    opacity: 0;
+    transition: transform 0.9s ease-in-out, opacity 0.0s ease-in-out;
+    z-index: 10;
+}
+
+.resultado-container.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.resultado-texto {
+    font-size: 30px;
+    color: #8965BC;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba #C767B1;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    z-index: 9;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.resultado-container button#fecharResultado {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 2em;
+    transition: background-color 0.3s ease;
+}
+
+.resultado-container button#fecharResultado:hover {
+    background-color: #8965BC;
+}
+
+@media(max-width: 593px) {
+
+    body {
+        box-shadow: inset -20px 20px 100px 20px #FAADD4, inset 20px -20px 100px 20px #FAADD4;
+    }
+
+    input {
+        height: 40px;
+        width: 250px;
+    }
+    .resultado-container {
+        border-radius: 280px;
+        padding: 82px 63px;
+    }
+    .resultado-container button#fecharResultado {
+        width: 140px;
+    }
+}
+
+@media(max-width: 530px) {
+
+    input {
+        height: 40px;
+        width: 236px;
+    }
+}
+
+@media(max-width: 505px) {
+
+     input {
+        height: 40px;
+        width: 220px;
+    }
+     .resultado-container {
+        border-radius: 280px;
+        padding: 90px 63px;
+    }
+}
+
+@media(max-width: 470px) {
+
+     input {
+        height: 40px;
+        width: 210px;
+    }
+}
+
+@media(max-width: 450px) {
+
+    h2 {
+        font-size: 40px;
+    
+    }
+        
+     input {
+        height: 40px;
+        width: 190px;
+    }
+
+    button {
+        width: 165px;
+    }
+
+     .resultado-container {
+        border-radius: 280px;
+        padding: 64px 69px;
+    }
+}

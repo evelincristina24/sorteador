@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>sorteador Vic</title>
+
+</head>
+
+<body>
+    <img src="./img/logo_vic-removebg-preview.png">
+
+    <h2>Sortear um Número</h2>
+    <div id="overlay" class="overlay"></div>
+    <div>
+        <input placeholder="entre" class="input-min" type="number">
+        <input placeholder="e" class="input-max" type="number">
+    </div>
+
+    <button onclick="generateNunber()">Sortear</button>
+    <div id="resultado" class="resultado-container">
+        <p class="resultado-texto"></p>
+        <button id="fecharResultado">Fechar</button>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
