@@ -138,6 +138,7 @@ img {
     body {
         box-shadow: inset -20px 20px 100px 20px #FAADD4, inset 20px -20px 100px 20px #FAADD4;
         max-width: 100%;
+        position: fixed;
     }
 
     input {
