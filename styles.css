@@ -201,3 +201,29 @@ img {
         padding: 64px 69px;
     }
 }
+
+@media(max-width: 410px) {
+
+         
+     input {
+        height: 40px;
+        width: 177px;
+    }
+    
+    img {
+        width: 534px;
+    }
+
+}
+
+@media(max-width: 380px) {
+
+    input {
+        height: 40px;
+        width: 160px;
+    }
+
+    img {
+        width: 499px;
+    }
+}
